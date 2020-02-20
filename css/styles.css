@@ -1,12 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Poppins', sans-serif;*/
 } 
 
-.section-outer{}
-.section-inner{
+.wrapper{
     width: 1110px;
     margin: 0 auto;
+}
+
+/* BUTTON */
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 30px;
+    letter-spacing: 2.5px;
+}
+
+.primary-color {
+    color: white;
+    background-color: #1085e4;
+    border: 1px solid #1085e4;
+}
+
+.primary-color:hover {
+    color: #1085e4;
+    background-color: white;
+}
+
+.secondary-color {
+    color: #7e8bae;
+    background-color: #cbdbe8;
+    border: 1px solid #cbdbe8;
+}
+
+.secondary-color:hover {
+   color: #cbdbe8;
+   background-color: white;
 }
 
 /* header */
@@ -26,7 +62,7 @@ body {
 
 .section-header-navbar {
     display: flex;
-
+    margin-top: 40px;
     align-items: center;
     flex-shrink: 1;
 }
@@ -34,14 +70,18 @@ body {
     height: 50px;
     width: 50px;
     background-color: indigo;
+    flex-shrink: 1; 
 }
 
 .section-header-top-logoText {
     color: #192b59;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
+    flex-shrink: 1;
+    margin: 0 15px; 
 }
 .section-header-top-nav {
     display: flex;
@@ -52,9 +92,18 @@ body {
 .section-header-top-nav-li {
     font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
     color: #6e7ea9;
-    margin-left: 21px;
-    margin-right: 21px;
+    margin: 0 21px;
+    letter-spacing: 2px;
+}
+
+.section-header-top-btn {
+    flex-shrink: 1;
+    font-weight: 400;
+    padding: 20px 50px;
+    margin-left: 15px;
+    letter-spacing: 2px;
 }
 
 .section-header-content {
@@ -67,4 +116,15 @@ body {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
+}
+
+.section-header-content-menu {
+    margin-top: 70px;
+}
+
+.section-header-content-menu-primary {
+}
+
+.section-header-content-menu-secondary {
+    margin-left: 15px;
 }
