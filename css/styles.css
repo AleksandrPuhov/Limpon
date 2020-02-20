@@ -1,0 +1,70 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif;*/
+} 
+
+.section-outer{}
+.section-inner{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* header */
+.section-header {
+    background: url(../img/header/bg-header-full.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.section-header-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.section-header-navbar {
+    display: flex;
+
+    align-items: center;
+    flex-shrink: 1;
+}
+.section-header-top-logoImg {
+    height: 50px;
+    width: 50px;
+    background-color: indigo;
+}
+
+.section-header-top-logoText {
+    color: #192b59;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+.section-header-top-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.section-header-top-nav-li {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6e7ea9;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.section-header-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-header-content-text {
+    font-size: 80px;
+    font-weight: 600;
+    color: #192b59;
+}
