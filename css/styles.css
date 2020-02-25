@@ -31,7 +31,7 @@ a {
 .primary-color {
     color: white;
     background-color: #1085e4;
-    border: 1px solid #1085e4;
+    border: 2px solid #1085e4;
 }
 
 .primary-color:hover {
@@ -42,12 +42,22 @@ a {
 .secondary-color {
     color: #7e8bae;
     background-color: #cbdbe8;
-    border: 1px solid #cbdbe8;
+    border: 2px solid #cbdbe8;
 }
 
 .secondary-color:hover {
    color: #cbdbe8;
    background-color: transparent;
+}
+
+.section-plans-card-btn-color {
+    color: #8085b1;
+    background-color: transparent;
+    border: 2px solid #dce1e5;
+}
+
+.section-plans-card-btn-color:hover {
+   background-color: #dce1e5;
 }
 
 /* header */
@@ -878,4 +888,174 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+/* plans */
+.section-plans {
+    text-align: center;
+
+}
+.section-plans-text-1 {
+    color: #1085e4;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 115px;
+}
+.section-plans-text-2 {
+    color: #192b59;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    margin-bottom: 85px;
+}
+.section-plans-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.section-plans-card {
+    flex-basis: 31.5%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.plans-card-primary {
+    background-color: #192b59;
+}
+.plans-card-secondary {
+    background: url(../img/plans/bg-card.png) right no-repeat;
+}
+
+.section-plans-card-cost-small {
+    font-size: 20px;
+    font-weight: 700;
+}
+.section-plans-card-cost-big {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.section-plans-card-cost-free {
+    color: #000958;
+}
+
+.section-plans-card-color-white {
+    color: white;
+}
+
+.section-plans-card-color-mo {
+   color: #7b8ab2; 
+}
+
+.section-plans-card-cost-350 {
+    color: #192b59;
+}
+
+.section-plans-card-starter {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-top: 15px;
+}
+
+.section-plans-card-starter-color {
+     color: #0084ff; 
+}
+
+.section-plans-card-text-wrapper {
+    margin-top: 45px;
+    padding-bottom: 45px;
+}
+.section-plans-card-text {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.section-plans-card-btn {
+    padding: 20px 60px;
+}
+
+.section-plans-card-text-color {
+    color: #8085b1;
+}
+
+/* team */
+.section-team {
+    background: url(../img/team/bg-team.png) no-repeat;
+    height: 850px;
+    text-align: center;
+}
+.section-team-text-1 {
+    color: #85c8ff;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 115px;
+}
+.section-team-text-2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    margin-bottom: 140px;
+}
+
+.section-team-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.section-team-card {
+    flex-basis: 31.5%;
+    background-color: white;
+    box-shadow: 0px 9px 20px #f4f4f4;
+    position: relative;
+}
+.section-team-card-img {
+    height: 270px;
+    width: 290px;
+    position: absolute;    
+    top: -90px;
+    left: 9%;
+}
+.team-card-img-1 {
+    background: url(../img/team/photo-1.png) no-repeat center;
+}
+.team-card-img-2 {
+    background: url(../img/team/photo-2.png) no-repeat center;
+}
+.team-card-img-3 {
+    background: url(../img/team/photo-3.png) no-repeat center;
+}
+.section-team-card-position {
+    color: #1a88e1;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 210px;
+    margin-bottom: 10px;
+}
+.section-team-card-name {
+    color: #192b59;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.section-team-card-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.section-team-card-icon {
+    height: 50px;
+    width: 50px;
+    background-color: violet;
 }
