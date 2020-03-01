@@ -43,7 +43,7 @@
 
 <body>
     <!-- header -->
-    <section class="section-header">
+    <section class="section-header section-outer">
         <div class="section-header-screenshot"></div>
         <div class="wrapper section-header-flex">
             <div class="section-header-navbar">
@@ -70,17 +70,17 @@
     </section>
     <!-- /header -->
     <!-- sponsors -->
-    <section class="section-sponsors">
+    <section class="section-sponsors section-outer">
         <div class="wrapper section-sponsors-flex">
-            <div class="section-sponsors-labe-l"></div>
-            <div class="section-sponsors-labe-2"></div>
-            <div class="section-sponsors-labe-3"></div>
-            <div class="section-sponsors-labe-4"></div>
+            <div class="section-sponsors-labe section-sponsors-labe-l"></div>
+            <div class="section-sponsors-labe section-sponsors-labe-2"></div>
+            <div class="section-sponsors-labe section-sponsors-labe-3"></div>
+            <div class="section-sponsors-labe section-sponsors-labe-4"></div>
         </div>
     </section>
     <!-- /sponsors -->
     <!-- best -->
-    <section class="section-best">
+    <section class="section-best section-outer">
         <div class="wrapper">
             <div class="section-best-grid">
                 <div class="section-best-grid-item-1">
@@ -142,7 +142,7 @@
     </section>
     <!-- /best -->
     <!-- subscribe -->
-    <section class="section-subscribe">
+    <section class="section-subscribe section-outer">
         <div class="wrapper section-subscribe-flex">
             <div class="section-subscribe-content">
                 <div class="section-subscribe-text-1">Subscribe</div>
@@ -154,12 +154,12 @@
                     <button class="btn primary-color section-subscribe-form-button" type=>Subscribe</button>
                 </div>
             </div>
-            <img src="img/subscribe/robot.png" alt="robot">
+            <img src="img/subscribe/robot.png" class="section-subscribe-img" alt="robot">
         </div>
     </section>
     <!-- /subscribe -->
     <!-- amazing -->
-    <section class="section-amazing">
+    <section class="section-amazing section-outer">
         <div class="section-amazing-screenshot"></div>
         <div class="wrapper section-amazing-flex">
             <div class="section-amazing-flex-inner">
@@ -210,7 +210,9 @@
     </section>
     <!-- /amazing -->
     <!-- counter -->
-    <section class="section-counter">
+    <section class="section-counter section-outer">
+        <img src="img/counter/circle.svg" class="section-counter-circle" alt="circle">
+        <img src="img/counter/rhombus.svg" class="section-counter-rhombus" alt="rhombus">
         <div class="wrapper">
             <div class="section-counter-content">
                 <div class="section-counter-text-1">FUn Facts</div>
@@ -238,7 +240,7 @@
     </section>
     <!-- /counter -->
     <!-- video -->
-    <section class="section-video">
+    <section class="section-video section-outer">
         <div class="wrapper">
             <div class="section-video-intro">Intro</div>
             <div class="section-video-content">
@@ -254,12 +256,12 @@
                 </div>
             </div>
             <a href="" class="section-video-img"><img src="img/video/video-full.png" alt="video"></a>
-            
+
         </div>
     </section>
     <!-- /video -->
     <!-- suitable -->
-    <section class="section-suitable">
+    <section class="section-suitable section-outer">
         <div class="wrapper section-suitable-flex">
             <img src="img/suitable/suitable-img.png" alt="screenshot">
             <div class="section-suitable-content">
@@ -278,7 +280,7 @@
     </section>
     <!-- /suitable -->
     <!-- easy -->
-    <section class="section-easy">
+    <section class="section-easy section-outer">
         <div class="section-easy-bg-img"></div>
         <div class="wrapper section-easy-flex">
             <div class="section-easy-content">
@@ -297,14 +299,14 @@
     </section>
     <!-- /easy -->
     <!-- screenshot -->
-    <section class="section-screenshot">
+    <section class="section-screenshot section-outer">
         <div class="section-screenshot-text-1">screen preview</div>
         <div class="section-screenshot-text-2">Screenshot With Details</div>
-        <img src="img/screenshot/bg-screenshot.png" alt="screenshot">
+        <img src="img/screenshot/bg-screenshot.png" class="section-screenshot-img" alt="screenshot">
     </section>
     <!-- /screenshot -->
     <!-- clients -->
-    <section class="section-clients">
+    <section class="section-clients section-outer">
         <div class="section-clients-block"></div>
         <div class="wrapper">
             <div class="section-clients-text-1">testimonials</div>
@@ -354,7 +356,7 @@
     </section>
     <!-- /clients -->
     <!-- plans -->
-    <section class="section-plans">
+    <section class="section-plans section-outer">
         <div class="wrapper">
             <div class="section-plans-text-1">our plans</div>
             <div class="section-plans-text-2">Pricing Plans</div>
@@ -407,7 +409,7 @@
     </section>
     <!-- /plans -->
     <!-- team -->
-    <section class="section-team">
+    <section class="section-team section-outer">
         <div class="wrapper">
             <div class="section-team-text-1">angels</div>
             <div class="section-team-text-2">Our Team</div>
@@ -417,7 +419,15 @@
                     <div class="section-team-card-position">founder</div>
                     <div class="section-team-card-name">Ricardo T. Obrien</div>
                     <div class="section-team-card-icons">
-                        <button class="section-team-card-btn section-team-card-icon-plus"></button>
+                        <a href="" id="a-ricardo-1" class="section-team-card-btn section-team-card-icon-facebook"
+                            hidden></a>
+                        <a href="" id="a-ricardo-2" class="section-team-card-btn section-team-card-icon-twitter"
+                            hidden></a>
+                        <button id="btn-ricardo" class="section-team-card-btn section-team-card-icon-plus"></button>
+                        <a href="" id="a-ricardo-3" class="section-team-card-btn section-team-card-icon-behance"
+                            hidden></a>
+                        <a href="" id="a-ricardo-4" class="section-team-card-btn section-team-card-icon-chrome"
+                            hidden></a>
                     </div>
                 </div>
                 <div class="section-team-card">
@@ -425,10 +435,15 @@
                     <div class="section-team-card-position">ceo</div>
                     <div class="section-team-card-name">Alberto Del Rio</div>
                     <div class="section-team-card-icons">
-                        <button class="section-team-card-btn section-team-card-icon-facebook"></button>
-                        <button class="section-team-card-btn section-team-card-icon-twitter"></button>
-                        <button class="section-team-card-btn section-team-card-icon-behance"></button>
-                        <button class="section-team-card-btn section-team-card-icon-chrome"></button>
+                        <a href="" id="a-alberto-1" class="section-team-card-btn section-team-card-icon-facebook"
+                            hidden></a>
+                        <a href="" id="a-alberto-2" class="section-team-card-btn section-team-card-icon-twitter"
+                            hidden></a>
+                        <button id="btn-alberto" class="section-team-card-btn section-team-card-icon-plus"></button>
+                        <a href="" id="a-alberto-3" class="section-team-card-btn section-team-card-icon-behance"
+                            hidden></a>
+                        <a href="" id="a-alberto-4" class="section-team-card-btn section-team-card-icon-chrome"
+                            hidden></a>
 
                     </div>
                 </div>
@@ -437,7 +452,15 @@
                     <div class="section-team-card-position">designer</div>
                     <div class="section-team-card-name">Thomas Alva Adison</div>
                     <div class="section-team-card-icons">
-                        <button class="section-team-card-btn section-team-card-icon-plus"></button>
+                        <a href="" id="a-thomas-1" class="section-team-card-btn section-team-card-icon-facebook"
+                            hidden></a>
+                        <a href="" id="a-thomas-2" class="section-team-card-btn section-team-card-icon-twitter"
+                            hidden></a>
+                        <button id="btn-thomas" class="section-team-card-btn section-team-card-icon-plus"></button>
+                        <a href="" id="a-thomas-3" class="section-team-card-btn section-team-card-icon-behance"
+                            hidden></a>
+                        <a href="" id="a-thomas-4" class="section-team-card-btn section-team-card-icon-chrome"
+                            hidden></a>
                     </div>
                 </div>
             </div>
@@ -445,25 +468,35 @@
     </section>
     <!-- /team -->
     <!-- contact -->
-    <section class="section-contact">
+    <section class="section-contact section-outer">
         <div class="section-contact-bg-img"></div>
         <div class="wrapper section-contact-flex">
             <img src="img/contact/img-contact.png" alt="screenshot">
             <form action="" class="section-contact-form">
                 <p class="section-contact-form-title">Start Your Free Trail No Need Credit Card.</p>
-                <input type="text" class="section-contact-input section-contact-form-name" placeholder="Enter your name here">
-                <input type="email" class="section-contact-input section-contact-form-email" placeholder="Enter your email here">
-                <textarea name="textMessage" class="section-contact-input section-contact-form-message" placeholder="Enter your message here"></textarea>
+                <div class="section-contact-form-name-icon">
+                    <input type="text" class="section-contact-input section-contact-form-name"
+                        placeholder="Enter your name here">
+                </div>
+                <div class="section-contact-form-email-icon">
+                    <input type="email" class="section-contact-input section-contact-form-email"
+                        placeholder="Enter your email here">
+                </div>
+                <div class="section-contact-form-message-icon">
+                    <textarea name="textMessage" class="section-contact-input section-contact-form-message"
+                        placeholder="Enter your message here"></textarea>
+                </div>
                 <button class="btn primary-color section-contact-form-submit">submit now</button>
             </form>
         </div>
     </section>
     <!-- /contact -->
     <!-- footer -->
-    <section class="section-footer">
+    <section class="section-footer section-outer">
         <div class="wrapper">
             <div class="section-footer-flex">
-                <div class="section-footer-text">Made With Love & Copyright By - <span class="section-footer-text-1">limpon</span></div>
+                <div class="section-footer-text">Made With Love & Copyright By - <span
+                        class="section-footer-text-1">limpon</span></div>
                 <a href="" class="section-footer-icon section-footer-icon-facebook"></a>
                 <a href="" class="section-footer-icon section-footer-icon-twitter"></a>
                 <a href="" class="section-footer-icon section-footer-icon-behance"></a>
@@ -473,6 +506,50 @@
         </div>
     </section>
     <!-- /footer -->
+
+    <script>
+        const btnRicardo = document.getElementById('btn-ricardo');
+        const btnAlberto = document.getElementById('btn-alberto');
+        const btnThomas = document.getElementById('btn-thomas');
+
+        btnRicardo.onclick = () => {
+            const aRicardo1 = document.getElementById('a-ricardo-1');
+            const aRicardo2 = document.getElementById('a-ricardo-2');
+            const aRicardo3 = document.getElementById('a-ricardo-3');
+            const aRicardo4 = document.getElementById('a-ricardo-4');
+
+            aRicardo1.hidden = false;
+            aRicardo2.hidden = false;
+            aRicardo3.hidden = false;
+            aRicardo4.hidden = false;
+            btnRicardo.hidden = true;
+        };
+
+        btnAlberto.onclick = () => {
+            const aAlberto1 = document.getElementById('a-alberto-1');
+            const aAlberto2 = document.getElementById('a-alberto-2');
+            const aAlberto3 = document.getElementById('a-alberto-3');
+            const aAlberto4 = document.getElementById('a-alberto-4');
+
+            aAlberto1.hidden = false;
+            aAlberto2.hidden = false;
+            aAlberto3.hidden = false;
+            aAlberto4.hidden = false;
+            btnAlberto.hidden = true;
+        };
+        btnThomas.onclick = () => {
+            const aThomas1 = document.getElementById('a-thomas-1');
+            const aThomas2 = document.getElementById('a-thomas-2');
+            const aThomas3 = document.getElementById('a-thomas-3');
+            const aThomas4 = document.getElementById('a-thomas-4');
+
+            aThomas1.hidden = false;
+            aThomas2.hidden = false;
+            aThomas3.hidden = false;
+            aThomas4.hidden = false;
+            btnThomas.hidden = true;
+        };
+    </script>
 </body>
 
 </html>
