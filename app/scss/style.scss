@@ -1,160 +1,22 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-} 
+@import "vars.scss";
+@import "mixins.scss";
+@import "main.scss";
 
-a {
-    text-decoration: none;
-}
+@import "header.scss";
 
-.section-outer {
-    padding: 0 20px;
-}
-
-.wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
-    position: relative; 
-    height: inherit;
-}
-
-/* BUTTON */
-.btn {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 20px 40px;
-    border-radius: 30px;
-    letter-spacing: 2.5px;
-    transition: 0.3s;
-}
-
-.primary-color {
-    color: white;
-    background-color: #1085e4;
-    border: 2px solid #1085e4;
-}
-
-.primary-color:hover {
-    color: #1085e4;
-    background-color: transparent;
-}
-
-.secondary-color {
-    color: #7e8bae;
-    background-color: #cbdbe8;
-    border: 2px solid #cbdbe8;
-}
-
-.secondary-color:hover {
-   color: #cbdbe8;
-   background-color: transparent;
-}
-
-.section-plans-card-btn-color {
-    color: #8085b1;
-    background-color: transparent;
-    border: 2px solid #dce1e5;
-}
-
-.section-plans-card-btn-color:hover {
-   background-color: #dce1e5;
-}
-
-/* header */
-.section-header {
-    background: url(../img/header/bg-header.png) no-repeat 50% 50%;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-}
-
-.section-header-screenshot {
-    background: url(../img/header/screenshot.png) no-repeat;
-    position: absolute;
-    z-index: 5;
-    width: 890px;
-    height: 70%;
-    right: 0;
-    top: 18%;
-    background-size: contain;
-    background-position: right;
-}
+// @import "author.scss";
+// @import "achievement.scss";
+// @import "content.scss";
+// @import "other.scss";
+// @import "testimonial.scss";
+// @import "events.scss";
+// @import "blog.scss";
+// @import "subscribe.scss";
+// @import "footer.scss";
 
 
-.section-header-flex {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    z-index: 10;
-}
 
-.section-header-navbar {
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-}
-.section-header-top-logoImg {
-    height: 50px;
-    width: 50px;
-    background: url(../img/header/logo.png) no-repeat;
-}
-
-.section-header-top-logoText {
-    color: #192b59;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin: 0 15px; 
-}
-.section-header-top-nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-.section-header-top-nav-li {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #6e7ea9;
-    margin: 0 15px;
-    letter-spacing: 2px;
-}
-
-.section-header-top-btn {
-    font-weight: 400;
-    padding: 20px 55px;
-    margin-left: 15px;
-    letter-spacing: 2px;
-}
-
-.section-header-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 510px;
-}
-.section-header-content-text {
-    font-size: 80px;
-    font-weight: 600;
-    color: #192b59;
-    
-    letter-spacing: -2px;
-}
-
-.section-header-content-menu {
-    margin-top: 70px;
-}
-
-.section-header-content-menu-secondary {
-    margin-left: 15px;
-}
-
-/* sponsors */
+/*
 .section-sponsors {
     background: url(../img/sponsors/bg-sponsors.png) no-repeat 50% 50%;
     background-size: cover;
@@ -192,7 +54,6 @@ a {
 }
 
 
-/* best */
 .section-best-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -325,7 +186,6 @@ a {
     font-weight: 400;
 }
 
-/* subscribe */
 .section-subscribe {
 
     background: rgba(10,32,144,1);
@@ -403,16 +263,16 @@ a {
     outline: none;
 }
 
-.section-subscribe-form-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.section-subscribe-form-input::-webkit-input-placeholder { 
     color: white;
 }
-.section-subscribe-form-input::-moz-placeholder { /* Firefox 19+ */
+.section-subscribe-form-input::-moz-placeholder { 
     color: white;
 }
-.section-subscribe-form-input:-ms-input-placeholder { /* IE 10+ */
+.section-subscribe-form-input:-ms-input-placeholder { 
     color: white;
 }
-.section-subscribe-form-input:-moz-placeholder { /* Firefox 18- */
+.section-subscribe-form-input:-moz-placeholder { 
     color: white;
 }
 
@@ -428,7 +288,6 @@ a {
     outline: none;
 }
 
-/* amazing */
 
 .section-amazing {
     position: relative;
@@ -505,7 +364,6 @@ a {
     border: 0.5px solid #f2f2f2;
 }
 
-/* counter */
 .section-counter {
     height: 530px;
     background-color: #edf6ff;
@@ -577,7 +435,6 @@ a {
     margin-top: 5px;
 }
 
-/* video */
 .section-video {
     position: relative;
 }
@@ -662,7 +519,6 @@ a {
     border-radius: 8px;
 }
 
-/* suitable */
 .section-suitable {
     background: url(../img/suitable/bg-suitable.png) no-repeat 50% 50%;
     background-size: cover;
@@ -706,7 +562,6 @@ a {
     margin-bottom: 55px;
 }
 
-/* easy */
 .section-easy {
     position: relative;
     height: 690px;
@@ -763,7 +618,6 @@ a {
     padding: 20px 62px;
 }
 
-/* screenshot */
 .section-screenshot {
     background-color: #edf6ff;
     text-align: center;
@@ -790,7 +644,6 @@ a {
     width: 100%;
 }
 
-/* clients */
 .section-clients {
     position: relative;
 }
@@ -875,7 +728,6 @@ a {
     letter-spacing: 3px;
 }
 
-/* plans */
 .section-plans {
     text-align: center;
 
@@ -968,7 +820,6 @@ a {
     color: #8085b1;
 }
 
-/* team */
 .section-team {
     background: url(../img/team/bg-team.png) no-repeat 0 0;
     height: 850px;
@@ -1097,7 +948,6 @@ a {
     background-color: #1a88e1;
 } 
 
-/* contact */
 .section-contact{
     background-color: #edf6ff;
     position: relative;
@@ -1151,16 +1001,16 @@ a {
     outline: none;
 }
 
-.section-contact-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.section-contact-input::-webkit-input-placeholder { 
      color: #8995b3;
 }
-.section-contact-input::-moz-placeholder { /* Firefox 19+ */
+.section-contact-input::-moz-placeholder { 
      color: #8995b3;
 }
-.section-contact-input:-ms-input-placeholder { /* IE 10+ */
+.section-contact-input:-ms-input-placeholder { 
      color: #8995b3;
 }
-.section-contact-input:-moz-placeholder { /* Firefox 18- */
+.section-contact-input:-moz-placeholder { 
      color: #8995b3;
 } 
 
@@ -1249,7 +1099,6 @@ a {
 }
 
 
-/* footer */
 .section-footer {
     background-color: #192b59;
     height: 70px;

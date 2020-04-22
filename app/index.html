@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Limpon</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"
@@ -33,43 +34,55 @@
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"
         data-mce-href="img/favicon/favicon-16x16.png">
 
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,700&display=swap"
         rel="stylesheet">
 
+    <!--build:css css/style.min.css -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
 </head>
 
 <body>
-    <!-- header -->
-    <section class="section-header section-outer">
-        <div class="section-header-screenshot"></div>
-        <div class="wrapper section-header-flex">
-            <div class="section-header-navbar">
-                <div class="section-header-top-logoImg"> </div>
-                <div class="section-header-top-logoText">Limpon</div>
-                <nav class="section-header-top-nav">
-                    <a href="" class="section-header-top-nav-li">Home</a>
-                    <a href="" class="section-header-top-nav-li">Features</a>
-                    <a href="" class="section-header-top-nav-li">Video</a>
-                    <a href="" class="section-header-top-nav-li">Screens</a>
-                    <a href="" class="section-header-top-nav-li">Pricing</a>
-                    <a href="" class="section-header-top-nav-li">Team</a>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-navbar wrapper">
+                <a href="" target="_blank">
+                    <img class="header-navbar-logo" src="./img/logo.png" alt="Logo">
+                </a>
+                <nav class="header-navbar-menu">
+                    <ul>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Home</a></li>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Features</a></li>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Video</a></li>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Screens</a></li>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Pricing</a></li>
+                        <li> <a href="" target="_blank" class="header-navbar-menu-item">Team</a></li>
+                    </ul>
                 </nav>
-                <a href="" class="btn primary-color section-header-top-btn">free trail</a href="">
+                <a href="" target="_blank" class="btn-primary header-navbar-btn">free trail</a href="">
             </div>
-            <div class="section-header-content">
-                <p class="section-header-content-text">Best Software Landingpage</p>
-                <div class="section-header-content-menu">
-                    <a href="" class="btn primary-color section-header-content-menu-primary">get started now</a>
-                    <a href="" class="btn secondary-color section-header-content-menu-secondary">learn more</a>
+            <div class="header-content">
+                <img class="header-content-img" src="./img/header-img.png" alt="Screenshot">
+
+                <div class="header-content-inner wrapper">
+                    <h1 class="header-content-text">Best Software Landingpage</h1>
+                    <div class="header-content-menu">
+                        <a href="" class="btn-primary header-content-menu-primary">get started now</a>
+                        <a href="" class="btn-secondary header-content-menu-secondary">learn more</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- /header -->
-    <!-- sponsors -->
+    </header>
+
+    <main>
+
+    </main>
+
+
+    <!-- 
     <section class="section-sponsors section-outer">
         <div class="wrapper section-sponsors-flex">
             <div class="section-sponsors-labe section-sponsors-labe-l"></div>
@@ -78,8 +91,7 @@
             <div class="section-sponsors-labe section-sponsors-labe-4"></div>
         </div>
     </section>
-    <!-- /sponsors -->
-    <!-- best -->
+
     <section class="section-best section-outer">
         <div class="wrapper">
             <div class="section-best-grid">
@@ -140,8 +152,7 @@
             </div>
         </div>
     </section>
-    <!-- /best -->
-    <!-- subscribe -->
+
     <section class="section-subscribe section-outer">
         <div class="wrapper section-subscribe-flex">
             <div class="section-subscribe-content">
@@ -157,8 +168,7 @@
             <img src="img/subscribe/robot.png" class="section-subscribe-img" alt="robot">
         </div>
     </section>
-    <!-- /subscribe -->
-    <!-- amazing -->
+
     <section class="section-amazing section-outer">
         <div class="section-amazing-screenshot"></div>
         <div class="wrapper section-amazing-flex">
@@ -208,8 +218,7 @@
             </div>
         </div>
     </section>
-    <!-- /amazing -->
-    <!-- counter -->
+ 
     <section class="section-counter section-outer">
         <img src="img/counter/circle.svg" class="section-counter-circle" alt="circle">
         <img src="img/counter/rhombus.svg" class="section-counter-rhombus" alt="rhombus">
@@ -238,8 +247,7 @@
             </div>
         </div>
     </section>
-    <!-- /counter -->
-    <!-- video -->
+
     <section class="section-video section-outer">
         <div class="wrapper">
             <div class="section-video-intro">Intro</div>
@@ -259,8 +267,7 @@
 
         </div>
     </section>
-    <!-- /video -->
-    <!-- suitable -->
+
     <section class="section-suitable section-outer">
         <div class="wrapper section-suitable-flex">
             <img src="img/suitable/suitable-img.png" alt="screenshot">
@@ -278,8 +285,7 @@
             </div>
         </div>
     </section>
-    <!-- /suitable -->
-    <!-- easy -->
+
     <section class="section-easy section-outer">
         <div class="section-easy-bg-img"></div>
         <div class="wrapper section-easy-flex">
@@ -297,15 +303,13 @@
             <img src="img/easy/easy-img.png" alt="screenshot">
         </div>
     </section>
-    <!-- /easy -->
-    <!-- screenshot -->
+
     <section class="section-screenshot section-outer">
         <div class="section-screenshot-text-1">screen preview</div>
         <div class="section-screenshot-text-2">Screenshot With Details</div>
         <img src="img/screenshot/bg-screenshot.png" class="section-screenshot-img" alt="screenshot">
     </section>
-    <!-- /screenshot -->
-    <!-- clients -->
+
     <section class="section-clients section-outer">
         <div class="section-clients-block"></div>
         <div class="wrapper">
@@ -354,8 +358,7 @@
             </div>
         </div>
     </section>
-    <!-- /clients -->
-    <!-- plans -->
+
     <section class="section-plans section-outer">
         <div class="wrapper">
             <div class="section-plans-text-1">our plans</div>
@@ -407,8 +410,7 @@
             </div>
         </div>
     </section>
-    <!-- /plans -->
-    <!-- team -->
+
     <section class="section-team section-outer">
         <div class="wrapper">
             <div class="section-team-text-1">angels</div>
@@ -466,8 +468,7 @@
             </div>
         </div>
     </section>
-    <!-- /team -->
-    <!-- contact -->
+
     <section class="section-contact section-outer">
         <div class="section-contact-bg-img"></div>
         <div class="wrapper section-contact-flex">
@@ -490,8 +491,7 @@
             </form>
         </div>
     </section>
-    <!-- /contact -->
-    <!-- footer -->
+
     <section class="section-footer section-outer">
         <div class="wrapper">
             <div class="section-footer-flex">
@@ -505,51 +505,11 @@
             </div>
         </div>
     </section>
-    <!-- /footer -->
+ -->
 
-    <script>
-        const btnRicardo = document.getElementById('btn-ricardo');
-        const btnAlberto = document.getElementById('btn-alberto');
-        const btnThomas = document.getElementById('btn-thomas');
-
-        btnRicardo.onclick = () => {
-            const aRicardo1 = document.getElementById('a-ricardo-1');
-            const aRicardo2 = document.getElementById('a-ricardo-2');
-            const aRicardo3 = document.getElementById('a-ricardo-3');
-            const aRicardo4 = document.getElementById('a-ricardo-4');
-
-            aRicardo1.hidden = false;
-            aRicardo2.hidden = false;
-            aRicardo3.hidden = false;
-            aRicardo4.hidden = false;
-            btnRicardo.hidden = true;
-        };
-
-        btnAlberto.onclick = () => {
-            const aAlberto1 = document.getElementById('a-alberto-1');
-            const aAlberto2 = document.getElementById('a-alberto-2');
-            const aAlberto3 = document.getElementById('a-alberto-3');
-            const aAlberto4 = document.getElementById('a-alberto-4');
-
-            aAlberto1.hidden = false;
-            aAlberto2.hidden = false;
-            aAlberto3.hidden = false;
-            aAlberto4.hidden = false;
-            btnAlberto.hidden = true;
-        };
-        btnThomas.onclick = () => {
-            const aThomas1 = document.getElementById('a-thomas-1');
-            const aThomas2 = document.getElementById('a-thomas-2');
-            const aThomas3 = document.getElementById('a-thomas-3');
-            const aThomas4 = document.getElementById('a-thomas-4');
-
-            aThomas1.hidden = false;
-            aThomas2.hidden = false;
-            aThomas3.hidden = false;
-            aThomas4.hidden = false;
-            btnThomas.hidden = true;
-        };
-    </script>
+    <!--build:js js/main.min.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

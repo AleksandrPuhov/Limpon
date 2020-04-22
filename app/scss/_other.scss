@@ -1,0 +1,82 @@
+.other {
+    &-inner {
+        text-align: center;
+        padding: 145px 0 100px;
+    }
+    &-title {
+        @include title-param;
+        color: $title-color-main;
+    }
+    &-subtitle {
+        @include subtitle-param;
+        color: $text-color-secondary;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px -15px 0;
+    }
+    li {
+        flex-basis: 33.333%;
+        padding: 15px;
+    }
+
+    &-item {
+        &-book {
+            display: block;
+            margin: 0 auto;
+            max-width: 269px;
+        }
+        &-title {
+            @include title-small-param;
+            color: $title-color-main;
+            margin: 30px 0 15px;
+        }
+        &-text {
+            @include text-param;
+            @include open-sans;
+            color: $text-color-main;
+            max-width: 315px;
+            margin: 0 auto;
+        }
+        &-link {
+            @include text-bold-param;
+            @include open-sans;
+            color: $text-color-secondary;
+            text-transform: uppercase;
+            transition: $transition-time;
+            margin-top: 15px;
+            display: block;
+
+            &:hover {
+                color: $text-color-main;
+                text-decoration: underline;
+            }
+        }
+    }
+    &-btn {
+        max-width: 225px;
+        margin: 70px auto 0;
+    }
+
+    @media screen and (max-width: $tablet-wide) {
+        &-inner {
+            padding: 100px 0 100px;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+        &-item {
+            &-book {
+                img {
+                    width: 100%;
+                }
+            }
+            &-text {
+                max-width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    height: inherit;
+}
+
+.btn {
+    &-primary {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 20px 40px;
+        border-radius: 30px;
+        letter-spacing: 2.5px;
+        transition: 0.3s;
+    }
+
+    &-primary {
+        color: white;
+        background-color: #1085e4;
+        border: 2px solid #1085e4;
+
+        &:hover {
+            color: #1085e4;
+            background-color: transparent;
+        }
+    }
+}
+
+.primary-color .secondary-color {
+    color: #7e8bae;
+    background-color: #cbdbe8;
+    border: 2px solid #cbdbe8;
+}
+
+.secondary-color:hover {
+    color: #cbdbe8;
+    background-color: transparent;
+}
+
+.section-plans-card-btn-color {
+    color: #8085b1;
+    background-color: transparent;
+    border: 2px solid #dce1e5;
+}
+
+.section-plans-card-btn-color:hover {
+    background-color: #dce1e5;
+}
