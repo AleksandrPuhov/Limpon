@@ -2,123 +2,81 @@
     background: url(../img/header-bg.png) no-repeat 50% 50%;
     background-size: cover;
     position: relative;
-    padding: 0 0 30px;
-    min-height: 100vh;
+    height: 100vh;
 
     &-inner {
-        display: flex;
-        flex-direction: column;
-        height: inherit;
+        height: 100%;
     }
 
     &-navbar {
-        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 20px 0;
 
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            ul {
+                display: flex;
+            }
+            li {
+                margin-right: 35px;
+            }
+            &-item {
+                @include text-btn;
+                color: $header-nav-color;
+                border-bottom: 2px solid transparent;
+                padding: 5px 0;
+
+                &:hover {
+                    border-bottom: 2px solid $header-nav-color;
+                }
+            }
+        }
     }
 
     &-content {
         position: relative;
-        flex-grow: 1;
-        display: flex;
         height: 100%;
 
         &-img {
             position: absolute;
             z-index: 5;
             right: 0;
-
             width: 890px;
- 
+            top: 13%;
         }
 
         &-inner {
-
+            height: 100%;
             position: relative;
             z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-text {
+            font-size: 80px;
+            color: $title-color;
+            line-height: 1.125;
+            letter-spacing: -0.05em;
+            max-width: 510px;
+        }
+        &-menu {
+            display: flex;
+
+            &-primary {
+            }
+            &-secondary {
+            }
         }
     }
-}
-
-.section-header-screenshot {
-    background: url(../img/header/screenshot.png) no-repeat;
-    position: absolute;
-    z-index: 5;
-    width: 890px;
-    height: 70%;
-    right: 0;
-    top: 18%;
-    background-size: contain;
-    background-position: right;
-}
-
-.section-header-flex {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    z-index: 10;
-}
-
-.section-header-navbar {
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-}
-.section-header-top-logoImg {
-    height: 50px;
-    width: 50px;
-    background: url(../img/header/logo.png) no-repeat;
-}
-
-.section-header-top-logoText {
-    color: #192b59;
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin: 0 15px;
-}
-.section-header-top-nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-.section-header-top-nav-li {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #6e7ea9;
-    margin: 0 15px;
-    letter-spacing: 2px;
-}
-
-.section-header-top-btn {
-    font-weight: 400;
-    padding: 20px 55px;
-    margin-left: 15px;
-    letter-spacing: 2px;
-}
-
-.section-header-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 510px;
-}
-.section-header-content-text {
-    font-size: 80px;
-    font-weight: 600;
-    color: #192b59;
-
-    letter-spacing: -2px;
-}
-
-.section-header-content-menu {
-    margin-top: 70px;
-}
-
-.section-header-content-menu-secondary {
-    margin-left: 15px;
 }
