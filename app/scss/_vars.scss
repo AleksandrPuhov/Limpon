@@ -1,26 +1,33 @@
 $transition-time: 0.3s;
 
+//tittles
+$title-color: rgb(25, 43, 89);
+$subtitle-color: rgb(16, 133, 228);
+$text-color: rgb(117, 129, 161);
 
-$btn-primary-color:rgb(16, 133, 228);
-$btn-primary-hover-color:transparent;
-$btn-primary-text-color:#ffffff;
+$title-letter-spacing: -0.03em;
+$subtitle-letter-spacing: 0.2em;
 
+//buttons
+$btn-primary-color: rgb(16, 133, 228);
+$btn-primary-hover-color: transparent;
+$btn-primary-text-color: #ffffff;
 
+$btn-header-secondary-color: rgb(203, 219, 232);
+$btn-header-secondary-hover-color: transparent;
+$btn-header-secondary-text-color: rgb(126, 139, 174);
 
+//sections
 $header-nav-color: rgb(110, 126, 169);
 
-$title-color: rgb(25, 43, 89);
+$best-card-shadow: 0px 8px 16px 0px rgba(180, 181, 181, 0.2);
 
+$subscribe-bg-gradient-color: linear-gradient( to right, rgb(10,32,144) 0%, rgb(35,119,205) 100%);
+$subscribe-subtitle-color:rgb(0, 191, 254);
+$subscribe-title-color:#ffffff;
+$subscribe-text-color:rgb(223, 232, 255);
+$subscribe-form-border:#3e57ad;
 
-//$title-letter-spacing: 0.03em;
-
-// $text-letter-spacing: 0.05em;
-
-// $text-color-main: rgb(105, 105, 128);
-// $title-color-main: rgb(68, 68, 79);
-// $text-color-secondary: rgb(101, 228, 150);
-
-// $btn-gradient-color: linear-gradient(270deg, rgb(101, 228, 206) 0%, rgb(101, 228, 161) 100%);
 // $btn-text-color: #ffffff;
 // $btn-box-shadow: 0px 2px 0px 0px rgba(101, 228, 125, 0.5);
 
@@ -34,18 +41,6 @@ $title-color: rgb(25, 43, 89);
 // $modal-menu-bg: #ffffff;
 // $btn-modal-main: rgb(105, 105, 128);
 // $btn-modal-secondary: rgb(101, 228, 150);
-
-// $header-bg-gradient: linear-gradient(-45deg, rgb(84, 183, 161) 0%, rgb(66, 99, 132) 100%);
-// $header-text-color: #ffffff;
-// $author-bg-photo-gradient: linear-gradient(-45deg, rgb(90, 202, 177) 0%, rgb(66, 99, 132) 100%);
-// $content-bg-color: #f5f6fa;
-// $other-book-title-color: #ffffff;
-// $testimonial-text-color: rgb(145, 145, 181);
-// $events-bg-photo-gradient: (150deg, rgb(66, 99, 132) 0%, rgb(90, 202, 177) 100%);
-// $blog-bg-color: #f5f6fa;
-// $subscribe-input-text-color: rgb(145, 145, 181);
-// $footer-bg-color: rgb(68, 68, 79);
-// $footer-text-color: rgb(145, 145, 181);
 
 // $breakpoints: (
 //   "phone"       : 400px,

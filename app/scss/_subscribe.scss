@@ -1,0 +1,69 @@
+.subscribe {
+    background-image: $subscribe-bg-gradient-color;
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+    &-content {
+        &-subtitle {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: $subtitle-letter-spacing;
+            color: $subscribe-subtitle-color;
+        }
+        &-title {
+            color: $subscribe-title-color;
+            @include title-semibold;
+            margin: 35px 0 45px;
+        }
+        &-text {
+            color: $subscribe-text-color;
+            font-size: 18px;
+            line-height: 1.556;
+            font-weight: 400;
+            max-width: 410px;
+        }
+
+        &-form {
+            position: relative;
+            margin-top: 35px;
+
+            &-input {
+                font-size: 14px;
+                padding: 25px 215px 25px 40px;
+                border-radius: 35px;
+                color: $btn-primary-text-color;
+                background-color: transparent;
+                border: 2px solid $subscribe-form-border;
+                display: block;
+
+                width: 545px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: $btn-primary-text-color;
+                }
+            }
+            &-btn {
+                padding: 20px 45px;
+                letter-spacing: 4px;
+                position: absolute;
+                top: 7px;
+                right: 8px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    &-img {
+    }
+}

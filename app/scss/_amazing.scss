@@ -1,0 +1,83 @@
+.amazing {
+    position: relative;
+
+    &-img {
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        // z-index: 0;
+        width: 45%;
+    }
+    &-inner {
+        // position: relative;
+        // z-index: 5;
+        display: flex;
+        justify-content: flex-end;
+        padding: 100px 0 50px;
+        width: 50%;
+    }
+
+}
+
+
+.section-amazing-flex-inner {
+    flex-basis: 53%;
+    margin-top: 110px;
+}
+
+.section-amazing-icon {
+    background: url(../img/amazing/icon.png) no-repeat center;
+    display: block;
+    height: 100px;
+    width: 115px;
+}
+
+.section-amazing-content {
+    margin-left: 20px;
+}
+.section-amazing-title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -0.7px
+}
+
+.section-amazing-text{
+    color: #7581a1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section-amazing-block-list {
+    margin-top: 30px;
+    height: 340px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.section-amazing-block-list::-webkit-scrollbar { width: 4px; height: 4px; background-color: #f3f6ff; }
+.section-amazing-block-list::-webkit-scrollbar-track { border-radius: 10px; background-color: #f3f6ff; }
+.section-amazing-block-list::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #1085e4; }
+
+.section-amazing-block{
+    margin-bottom: 25px;
+}
+.section-amazing-block-title {
+    color: #5a6789;
+    font-size: 16px;
+    font-weight: 700;
+}
+.section-amazing-block-text {
+    color: #7581a1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section-amazing-block-line {
+    max-width: 550px;
+    border: 0.5px solid #f2f2f2;
+}

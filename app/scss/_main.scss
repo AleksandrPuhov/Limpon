@@ -38,11 +38,11 @@ li {
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
+    height: 100%;
 }
 
 .btn {
-    &-primary {
-
+    &-primary,&-header-secondary {
         @include text-btn;
         text-decoration: none;
         padding: 20px 40px;
@@ -60,17 +60,17 @@ li {
             background-color: $btn-primary-hover-color;
         }
     }
-}
 
-.primary-color .secondary-color {
-    color: #7e8bae;
-    background-color: #cbdbe8;
-    border: 2px solid #cbdbe8;
-}
+    &-header-secondary {
+        color: $btn-header-secondary-text-color;
+        background-color: $btn-header-secondary-color;
+        border: 2px solid $btn-header-secondary-color;
 
-.secondary-color:hover {
-    color: #cbdbe8;
-    background-color: transparent;
+        &:hover {
+            color: $btn-header-secondary-color;
+            background-color:$btn-header-secondary-hover-color;
+        }
+    }
 }
 
 .section-plans-card-btn-color {
@@ -78,7 +78,6 @@ li {
     background-color: transparent;
     border: 2px solid #dce1e5;
 }
-
 .section-plans-card-btn-color:hover {
     background-color: #dce1e5;
 }
