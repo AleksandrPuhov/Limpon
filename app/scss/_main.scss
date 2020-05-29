@@ -42,12 +42,14 @@ li {
 }
 
 .btn {
-    &-primary,&-header-secondary {
+    &-primary,&-header-secondary,
+    &-plans-secondary {
         @include text-btn;
         text-decoration: none;
         padding: 20px 40px;
         border-radius: 30px;
         display: block;
+        text-align: center;
     }
 
     &-primary {
@@ -71,6 +73,20 @@ li {
             background-color:$btn-header-secondary-hover-color;
         }
     }
+
+    &-plans-secondary {
+        color: $btn-header-secondary-text-color;
+        background-color: transparent;
+        border: 2px solid $btn-header-secondary-color;
+
+        &:hover {
+            background-color:$btn-header-secondary-color;
+        }
+
+
+    }
+
+
 }
 
 .section-plans-card-btn-color {

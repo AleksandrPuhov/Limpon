@@ -1,0 +1,60 @@
+.video {
+    &-intro {
+        color: $video-Intro-color;
+        font-size: 300px;
+        font-weight: 800;
+        letter-spacing: $title-letter-spacing;
+        position: absolute;
+        z-index: 5;
+        left: 15%;
+        top: -4%;
+    }
+    &-inner {
+        position: relative;
+        z-index: 15;
+        padding: 110px 0 100px;
+    }
+    &-img {
+        position: absolute;
+        z-index: 10;
+        top: 55px;
+        right: -120px;
+    }
+
+    &-title {
+        @include title-semibold;
+        color: $title-color;
+        max-width: 600px;
+        margin: 5px 0 40px;
+    }
+    &-text {
+        @include text-main;
+        color: $text-color;
+        max-width: 610px;
+    }
+    &-subtitle {
+        @include subtitle-bold;
+        color: $video-subtitle-color;
+        margin: 25px 0 25px;
+    }
+    &-icons {
+        &-google,
+        &-apple {
+            display: inline-block;
+            transition: $transition-time;
+            &:hover {
+                box-shadow: 0px 9px 20px #c9c9c9;
+                border-radius: 8px;
+            }
+        }
+        &-google {
+            height: 53px;
+            width: 161px;
+        }
+        &-apple {
+            height: 53px;
+            width: 152px;
+            margin-left: 25px;
+        }
+    }
+}

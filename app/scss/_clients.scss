@@ -1,0 +1,73 @@
+.clients {
+    position: relative;
+    &-figure {
+        background-color: $subtitle-color;
+        height: 400px;
+        width: 90%;
+        border-top-right-radius: 400px;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        z-index: 0;
+    }
+
+    &-inner {
+        position: relative;
+        z-index: 10;
+        padding: 200px 0 60px;
+    }
+    &-subtitle {
+        @include subtitle-extrabold;
+        color: $clients-subtitle-color;
+    }
+    &-title {
+        color: $clients-title-color;
+        @include title-semibold;
+        margin: 15px 0 55px;;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+        &-item {
+            flex-basis: 33.333%;
+            padding: 0 10px;
+        }
+    }
+    &-card {
+        border-radius: 10px;
+        background-color: $clients-card-color;
+        box-shadow: $clients-card-shadow;
+        padding: 35px 40px;
+
+        &-text {
+            @include text-main;
+            font-size: 14px;
+            color: $text-color;
+            margin-bottom: 25px;
+        }
+        &-person {
+            display: flex;
+            align-items: center;
+            &-img {
+                border-radius: 27px;
+            }
+            &-inner {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+            }
+            &-name {
+                @include title-semibold;
+                font-size: 22px;
+                color: $title-color;
+                margin-bottom: 5px;
+            }
+            &-info {
+                @include subtitle-bold;
+                font-size: 14px;
+                color: $subtitle-color;
+            }
+        }
+    }
+}

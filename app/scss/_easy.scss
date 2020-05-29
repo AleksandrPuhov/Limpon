@@ -1,0 +1,32 @@
+.easy {
+    background-image: url(../img/easy-bg-img.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 110px 0 90px;
+    }
+    &-content {
+        max-width: 590px;
+        &-info {
+            padding-left: 25px;
+            &-title {
+                @include title-semibold;
+                color: $title-color;
+                margin: 10px 0 25px;
+            }
+            &-text {
+                @include text-main;
+                color: $text-color;
+                margin-bottom: 40px;
+            }
+            &-btn {
+                display: inline-block;
+            }
+        }
+    }
+}

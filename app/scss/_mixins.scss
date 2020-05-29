@@ -2,8 +2,8 @@
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    transition: $transition-time; 
+    letter-spacing: $subtitle-letter-spacing;
+    transition: $transition-time;
 }
 
 @mixin text-main {
@@ -21,8 +21,22 @@
 @mixin title-semibold {
     font-size: 50px;
     font-weight: 600;
-    line-height: 0.52;
+    line-height: 1.2;
     letter-spacing: $title-letter-spacing;
 }
 
+@mixin subtitle-extrabold {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: $subtitle-letter-spacing;
+}
+
+@mixin subtitle-bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.625;
+    text-transform: uppercase;
+    letter-spacing: $subtitle-letter-spacing;
+}
 

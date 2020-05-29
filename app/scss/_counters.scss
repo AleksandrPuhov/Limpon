@@ -1,0 +1,56 @@
+.counters {
+    background-color: $counters-bg-color;
+    position: relative;
+    &-circle {
+        position: absolute;
+        height: 650px;
+        top: 115px;
+        left: 0;
+    }
+
+    &-rhombus {
+        position: absolute;
+        right: 0;
+        height: 650px;
+        top: -210px;
+    }
+
+    &-inner {
+        position: relative;
+        padding: 115px 0 110px;
+        text-align: center;
+    }
+
+    &-subtitle {
+        @include subtitle-extrabold;
+        color: $subtitle-color;
+    }
+
+    &-title {
+        @include title-semibold;
+        color: $title-color;
+        max-width: 430px;
+        margin: 20px auto 55px;
+    }
+
+    &-blocks {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-block {
+        &-num {
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $counters-count-color;
+        }
+        &-text {
+            color: $subtitle-color;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 5px;
+        }
+    }
+}

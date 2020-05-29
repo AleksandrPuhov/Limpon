@@ -1,0 +1,20 @@
+.screenshot {
+    background-color: #edf6ff;
+    text-align: center;
+    padding: 115px 0 0;
+
+    &-subtitle {
+        color: rgb(16, 133, 228);
+        @include subtitle-extrabold;
+    }
+    &-title {
+        color: $title-color;
+        @include title-semibold;
+        margin: 25px 0 70px;
+    }
+
+    &-img {
+        max-width: 1288px;
+        width: 100%;
+    }
+}
