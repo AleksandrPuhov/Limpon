@@ -1,3 +1,17 @@
+$(document).ready(function () {
+    const navbar = $("#navbar");
+
+    $(window).scroll(function () {
+        const scrolled = $(this).scrollTop();
+
+        if (scrolled > 0) {
+            navbar.css({ backgroundColor: "rgb(245, 250, 255)" });
+        } else {
+            navbar.css({ backgroundColor: "transparent" });
+        }
+    });
+});
+
 // const btnRicardo = document.getElementById('btn-ricardo');
 // const btnAlberto = document.getElementById('btn-alberto');
 // const btnThomas = document.getElementById('btn-thomas');
