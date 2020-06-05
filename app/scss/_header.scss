@@ -6,12 +6,13 @@
 
     &-inner {
         height: 100%;
+        position: relative;
     }
 
     &-navbar {
         position: fixed;
         width: 100%;
-        z-index: 100;
+        z-index: 50;
         padding: 20px 0;
 
         &-inner {
@@ -27,7 +28,7 @@
                 display: flex;
             }
             li {
-                margin-right: 35px;
+                margin: 0 35px 0 0;
             }
             &-item {
                 @include text-btn;
@@ -39,6 +40,9 @@
                     border-bottom: 2px solid $header-nav-color;
                 }
             }
+        }
+        &-burger {
+            display: none;
         }
     }
 
@@ -66,7 +70,103 @@
             &-primary {
                 margin-right: 25px;
             }
-            &-secondary {
+        }
+    }
+
+    @media screen and (max-width: $tablet-wide-size) {
+        &-navbar {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(245, 250, 255);
+                z-index: 10;
+            }
+            &-logo {
+                position: relative;
+                z-index: 11;
+            }
+
+            &-menu {
+                position: fixed;
+                z-index: 9;
+                left: 0;
+                top: -100%;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(245, 250, 255);
+                padding: 100px 30px 20px;
+                transition: $transition-time;
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: start;
+                    width: 170px;
+                }
+                li {
+                    margin: 0 0 35px 45px;
+                    align-self: start;
+                }
+                &-btn {
+                    margin: 0 0 35px 0;
+                    align-self: start;
+                }
+            }
+            &-burger {
+                display: block;
+                height: 20px;
+                width: 30px;
+                cursor: pointer;
+                position: relative;
+                z-index: 11;
+
+                &::before,
+                &::after,
+                span {
+                    display: block;
+                    content: "";
+                    background-color: $header-nav-color;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    transition: $transition-time;
+                }
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    bottom: 0;
+                }
+                span {
+                    top: 9px;
+                }
+            }
+
+            &-activ {
+                .header-navbar-menu {
+                    top: 0;
+                }
+                .header-navbar-burger {
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 9px;
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        bottom: 9px;
+                    }
+                    span {
+                        transform: scale(0);
+                    }
+                }
             }
         }
     }

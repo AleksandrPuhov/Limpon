@@ -22,6 +22,11 @@ body {
     font-family: "Open Sans", sans-serif;
     position: relative;
 }
+@media screen and (max-width: $tablet-wide-size) {
+    .lock {
+        overflow: hidden;
+    }
+}
 
 a {
     text-decoration: none;
@@ -42,7 +47,8 @@ li {
 }
 
 .btn {
-    &-primary,&-header-secondary,
+    &-primary,
+    &-header-secondary,
     &-plans-secondary {
         @include text-btn;
         text-decoration: none;
@@ -70,7 +76,7 @@ li {
 
         &:hover {
             color: $btn-header-secondary-color;
-            background-color:$btn-header-secondary-hover-color;
+            background-color: $btn-header-secondary-hover-color;
         }
     }
 
@@ -80,13 +86,9 @@ li {
         border: 2px solid $btn-header-secondary-color;
 
         &:hover {
-            background-color:$btn-header-secondary-color;
+            background-color: $btn-header-secondary-color;
         }
-
-
     }
-
-
 }
 
 .section-plans-card-btn-color {

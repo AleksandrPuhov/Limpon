@@ -4,10 +4,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         padding: 50px 0;
     }
     &-content {
+        flex-basis: 545px;
         &-subtitle {
             font-size: 14px;
             font-weight: 800;
@@ -40,8 +40,7 @@
                 background-color: transparent;
                 border: 2px solid $subscribe-form-border;
                 display: block;
-
-                width: 545px;
+                width: 100%;
 
                 &:focus {
                     outline: none;
@@ -64,6 +63,24 @@
             }
         }
     }
-    &-img {
+
+    @media screen and (max-width: $tablet-wide-size) {
+        &-inner {
+            flex-direction: column-reverse;
+        }
+        &-content {
+            flex-basis: auto;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            &-text {
+                max-width: none;
+            }
+        }
+        &-img {
+            max-width: 200px;
+            width: 100%;
+        }
     }
 }

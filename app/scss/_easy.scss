@@ -1,8 +1,6 @@
 .easy {
-    background-image: url(../img/easy-bg-img.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
+    background: url(../img/easy-bg.png) no-repeat 60% 50%;
+    background-size: cover;
 
     &-inner {
         display: flex;
