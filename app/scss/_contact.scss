@@ -11,8 +11,6 @@
         padding: 110px 0 125px;
     }
 
-    &-img {
-    }
     &-form {
         max-width: 525px;
         margin-left: 10px;
@@ -88,6 +86,23 @@
                         fill: $btn-primary-color;
                     }
                 }
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-wide-size) {
+        background-image: none;
+        &-inner {
+            flex-direction: column;
+            padding: 80px 0 90px;
+        }
+        &-img {
+            max-width: 445px;
+            width: 100%;
+        }
+        &-form {
+            margin: 10px 0 0;
+            &-submit {
+                margin: 35px auto 0;
             }
         }
     }

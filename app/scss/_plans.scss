@@ -28,7 +28,8 @@
     }
 
     &-card {
-        &-primary, &-secondary {
+        &-primary,
+        &-secondary {
             padding: 60px 55px 80px;
         }
         &-primary {
@@ -51,8 +52,9 @@
                 font-size: 20px;
                 font-weight: 700;
             }
-            &-free, &-350 {
-                color:$title-color;
+            &-free,
+            &-350 {
+                color: $title-color;
             }
             &-mo {
                 color: $text-color;
@@ -79,6 +81,32 @@
                 font-size: 14px;
                 margin-bottom: 25px;
             }
+        }
+    }
+    @media screen and (max-width: $tablet-wide-size) {
+        &-inner {
+            padding: 50px 0 50px;
+        }
+        &-list {
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 600px;
+            &-item {
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+
+        &-card {
+            &-primary,
+            &-secondary {
+                padding: 40px 30px 30px;
+            }
+            &-btn {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            padding: 40px 30px 30px;
         }
     }
 }

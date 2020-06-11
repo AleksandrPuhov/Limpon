@@ -68,6 +68,13 @@
             position: relative;
             top: auto;
             right: auto;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
         }
         &-content {
             position: relative;
@@ -92,6 +99,16 @@
         }
         &-intro {
             display: none;
+        }
+    }
+    @media screen and (max-width: $phone-wide-size) {
+        &-content-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-apple {
+                margin: 10px 0 0;
+            }
         }
     }
 }

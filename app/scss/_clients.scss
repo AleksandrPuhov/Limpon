@@ -23,7 +23,7 @@
     &-title {
         color: $clients-title-color;
         @include title-semibold;
-        margin: 15px 0 55px;;
+        margin: 15px 0 55px;
     }
     &-list {
         display: flex;
@@ -67,6 +67,36 @@
                 @include subtitle-bold;
                 font-size: 14px;
                 color: $subtitle-color;
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet-wide-size) {
+        &-figure {
+            display: none;
+        }
+        &-inner {
+            padding: 50px 0 50px;
+        }
+        &-subtitle,
+        &-title {
+            text-align: center;
+        }
+
+        &-subtitle {
+            color: $subtitle-color;
+        }
+        &-title {
+            color: $title-color;
+        }
+
+        &-list {
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 500px;
+            &-item {
+                padding: 0;
+                margin: 20px 0;
             }
         }
     }

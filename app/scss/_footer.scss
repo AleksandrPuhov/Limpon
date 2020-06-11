@@ -36,4 +36,12 @@
             }
         }
     }
+    @media screen and (max-width: $tablet-small-size) {
+        &-inner {
+            flex-direction: column;
+        }
+        &-icons {
+            margin: 15px 0 0;
+        }
+    }
 }

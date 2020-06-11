@@ -56,7 +56,7 @@
             justify-content: center;
         }
 
-        &-text {
+        &-title {
             font-size: 80px;
             color: $title-color;
             line-height: 1.125;
@@ -167,6 +167,23 @@
                         transform: scale(0);
                     }
                 }
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-small-size) {
+        background: url(../img/header-bg.png) no-repeat 60% 50%;
+    }
+
+    @media screen and (max-width: $phone-wide-size) {
+        &-content {
+            &-menu {
+                flex-direction: column;
+                &-primary {
+                    margin: 0 0 20px;
+                }
+            }
+            &-title {
+                font-size: 68px;
             }
         }
     }

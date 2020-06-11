@@ -27,4 +27,27 @@
             }
         }
     }
+    @media screen and (max-width: $tablet-wide-size) {
+        &-inner {
+            flex-direction: column;
+            padding: 80px 0 80px;
+        }
+        &-img {
+            max-width: 460px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &-content {
+            &-info {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width: $tablet-small-size) {
+        &-content-icon {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }

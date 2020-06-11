@@ -83,4 +83,31 @@
             }
         }
     }
+
+    @media screen and (max-width: $tablet-wide-size) {
+        &-inner {
+            padding: 80px 0 90px;
+        }
+        &-title {
+            margin: 10px 0 20px;
+        }
+        &-list {
+            flex-direction: column;
+            margin: 0;
+            &-item {
+                padding: 0;
+            }
+        }
+        &-card {
+            max-width: 500px;
+            margin: 115px auto 0;
+            padding: 300px 20px 20px;
+        }
+    }
+    @media screen and (max-width: $phone-wide-size) {
+        &-card {
+            margin: calc(20% + 25px) auto 0;
+            padding: 60% 20px 20px;
+        }
+    }
 }

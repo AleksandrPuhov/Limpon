@@ -1,6 +1,7 @@
 .counters {
     background-color: $counters-bg-color;
     position: relative;
+
     &-circle {
         position: absolute;
         height: 650px;
@@ -51,6 +52,26 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             margin-top: 5px;
+        }
+    }
+    @media screen and (max-width: $tablet-wide-size) {
+        &-circle {
+            display: none;
+        }
+
+        &-rhombus {
+            display: none;
+        }
+        &-inner {
+            padding: 80px 0 80px;
+        }
+    }
+    @media screen and (max-width: $tablet-small-size) {
+        &-blocks {
+            flex-direction: column;
+        }
+        &-block {
+            margin: 20px auto;
         }
     }
 }

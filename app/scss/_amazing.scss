@@ -87,4 +87,10 @@
             }
         }
     }
+    @media screen and (max-width: $tablet-small-size) {
+        &-icon {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
